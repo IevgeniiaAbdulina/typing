@@ -22,21 +22,31 @@
 
 ## Overview
 
-<img src="#" width="600px">
+<img src="src/assets/typing-screenshot.png" width="350px">
+<img src="src/assets/typing-screenshot-success.png" width="350px">
 
 With this project I've learned/improved:
 
-- ...
+- Handling User Input
+- Conditional Display
+- Character by Character Comparison
+- Property Binding
 
 ### Built With
 
 - This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
 - Deploy with [Vercel CLI](https://vercel.com) version 30.2.3.
 - [Bulma](https://bulma.io/): the modern CSS framework.
+- [Faker library](https://www.npmjs.com/package/faker/v/5.5.3) version faker@5.5.3 - randomly generate a sentence.
 
 ## Features
 
-- ...
+- Randomly Generate a sentence.
+- Display each character, but color it:
+  - green: it's right;
+  - red: it's wrong;
+  - grey: a given character hasn't been entered yet;
+- If the user enters the correct text, show the 'Success!' message.
 
 ## Acknowledgements
 

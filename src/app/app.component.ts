@@ -7,11 +7,22 @@ import { lorem } from 'faker';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   randomText = lorem.sentence();
+  title = 'Typing Challenge';
+  randomText = lorem.sentence();
+  enteredText = '';
 
-   onInput(event: any) {
+  onInput(event: any) {
     const value = event.target.value;
 
-    console.log(value)
-   }
+    console.log(value);
+    this.enteredText = value;
+  }
+
+  compare(randomLetter: string, enteredLetter: string) {
+    if(!enteredLetter) {
+      return 'pending';
+    }
+
+    return randomLetter === enteredLetter ? 'correct' : 'incorrect';
+  }
 }

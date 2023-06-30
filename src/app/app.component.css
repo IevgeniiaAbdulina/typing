@@ -1,0 +1,27 @@
+:host {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to bottom, #78ffd6, #a8ff78);
+}
+
+.box {
+  margin: 0 24px;
+}
+
+.field {
+  margin: 16px 0;
+}
+
+.pending {
+  color: #657b84;
+}
+
+.correct {
+  color: #04BF33;
+}
+
+.incorrect {
+  color: #F24C3D;
+}
